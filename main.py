@@ -13,6 +13,7 @@ while True:
         print(important.get("MolecularWeight"))
         print(important.get("ConnectivitySMILES"))
         print(important.get("IUPACName"))
+        pic = requests.get(f")
         break
     except KeyError:
         print("pls write again")
