@@ -14,7 +14,8 @@ while True:
         print(important.get("ConnectivitySMILES"))
         print(important.get("IUPACName"))
         pic = requests.get(f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/{name}/PNG")
-        info.pic = 
+        info_pic = pic.content()
+        open(info_pic , wb)
         break
     except KeyError:
         print("pls write again")
